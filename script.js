@@ -11,11 +11,12 @@
 ===================================================== */
 
 const SUPABASE_URL =
-    "PEGÁ_ACÁ_TU_PROJECT_URL";
+    "https://ydbkhrdfdgamaookeqnx.supabase.co
+";
 
 
 const SUPABASE_KEY =
-    "PEGÁ_ACÁ_TU_PUBLISHABLE_KEY";
+    "sb_publishable_XDKWXa2eYPJvS8Ef6OxNmg_kvrE1HAg";
 
 
 /* =====================================================
