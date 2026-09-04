@@ -10,12 +10,24 @@
    ⚠️ REEMPLAZAR ESTOS DOS VALORES
 ===================================================== */
 
-const SUPABASE_URL =
+/*const SUPABASE_URL =
     "https://ydbkhrdfdgamaookeqnx.supabase.co";
 
 
 const SUPABASE_KEY =
-    "sb_publishable_XDKWXa2eYPJvS8Ef6OxNmg_kvrE1HAg";
+    "sb_publishable_XDKWXa2eYPJvS8Ef6OxNmg_kvrE1HAg";*/
+    const SUPABASE_URL = "https://ydbkhrdfdgamaookeqnx.supabase.co";
+
+const SUPABASE_KEY = "sb_publishable_XDKWXa2eYPJvS8Ef6OxNmg_kvrE1HAg";
+
+const supabaseClient = window.supabase.createClient(
+    SUPABASE_URL,
+    SUPABASE_KEY
+);
+
+console.log("¡Supabase conectado correctamente!");
+console.log(supabaseClient);
+    
 
 
 /* =====================================================
@@ -26,7 +38,7 @@ const supabaseClient =
     window.supabase.createClient(
         SUPABASE_URL,
         SUPABASE_KEY
-    );
+    );/*
 
 
 /* =====================================================
