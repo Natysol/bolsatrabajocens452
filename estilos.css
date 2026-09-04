@@ -1,0 +1,63 @@
+/* =========================================
+   ESTADOS DE LA BASE DE DATOS
+========================================= */
+
+.cargando {
+    text-align: center;
+
+    padding: 40px;
+
+    color: #777;
+
+    font-weight: 600;
+}
+
+
+.error-base {
+    grid-column: 1 / -1;
+
+    text-align: center;
+
+    padding: 50px;
+
+    background: white;
+
+    border-radius: 18px;
+
+    color: #777;
+}
+
+
+.error-base h3 {
+    color: #333;
+
+    margin: 10px 0;
+}
+
+
+.mensaje-error {
+    color: #d64545;
+
+    text-align: center;
+
+    margin-top: 15px;
+
+    font-size: 14px;
+}
+
+
+.btn-enviar:disabled {
+    opacity: 0.6;
+
+    cursor: wait;
+}
+
+
+.botones-oferta {
+    width: 100%;
+}
+
+
+.btn-whatsapp {
+    display: block;
+}
