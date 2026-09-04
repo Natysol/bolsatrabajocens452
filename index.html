@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Conectá Trabajo</title>
+
+    <link
+        rel="stylesheet"
+        href="estilos.css"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================
+     ENCABEZADO
+========================================= -->
+
+<header class="header">
+
+    <div class="logo">
+
+        <div class="logo-icon">
+            💼
+        </div>
+
+        <div>
+
+            <span class="logo-principal">
+                Conectá
+            </span>
+
+            <span class="logo-secundario">
+                Trabajo
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <nav class="menu">
+
+        <a href="#inicio">
+            Inicio
+        </a>
+
+        <a href="#ofertas">
+            Ofertas
+        </a>
+
+        <a href="#publicar">
+            Publicar
+        </a>
+
+    </nav>
+
+
+    <a
+        href="#publicar"
+        class="btn-publicar"
+    >
+        + Publicar oferta
+    </a>
+
+</header>
+
+
+
+<!-- =========================================
+     PRINCIPAL
+========================================= -->
+
+<main>
+
+
+<!-- =========================================
+     HERO
+========================================= -->
+
+<section
+    id="inicio"
+    class="hero"
+>
+
+    <div class="hero-contenido">
+
+        <div class="etiqueta">
+            ✨ Oportunidades cerca tuyo
+        </div>
+
+
+        <h1>
+
+            Encontrá tu próximo
+
+            <span>
+                trabajo.
+            </span>
+
+        </h1>
+
+
+        <p>
+
+            Un espacio para conectar personas
+            que buscan oportunidades con quienes
+            necesitan incorporar nuevos talentos.
+
+        </p>
+
+
+        <div class="hero-botones">
+
+            <a
+                href="#ofertas"
+                class="btn-principal"
+            >
+                🔎 Ver ofertas
+            </a>
+
+
+            <a
+                href="#publicar"
+                class="btn-secundario"
+            >
+                Publicar una oferta
+            </a>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ILUSTRACIÓN -->
+
+    <div class="hero-ilustracion">
+
+        <div class="circulo circulo-1"></div>
+
+        <div class="circulo circulo-2"></div>
+
+
+        <div class="persona">
+
+            <div class="cabeza"></div>
+
+            <div class="cuerpo">
+
+                <div class="corazon">
+                    ♥
+                </div>
+
+            </div>
+
+            <div class="brazo brazo-izq"></div>
+
+            <div class="brazo brazo-der"></div>
+
+        </div>
+
+
+        <div class="tarjeta-flotante tarjeta-1">
+
+            <strong>
+                💼 Nuevas ofertas
+            </strong>
+
+            <small>
+                Oportunidades disponibles
+            </small>
+
+        </div>
+
+
+        <div class="tarjeta-flotante tarjeta-2">
+
+            ⭐
+
+            <strong>
+                ¡Encontrá tu oportunidad!
+            </strong>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     ESTADÍSTICAS
+========================================= -->
+
+<section class="estadisticas">
+
+    <div>
+
+        <strong id="cantidadOfertas">
+            0
+        </strong>
+
+        <span>
+            Ofertas publicadas
+        </span>
+
+    </div>
+
+
+    <div>
+
+        <strong>
+            100%
+        </strong>
+
+        <span>
+            Gratuito
+        </span>
+
+    </div>
+
+
+    <div>
+
+        <strong>
+            24/7
+        </strong>
+
+        <span>
+            Disponible
+        </span>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     OFERTAS
+========================================= -->
+
+<section
+    id="ofertas"
+    class="seccion"
+>
+
+    <div class="titulo-seccion">
+
+        <span class="mini-titulo">
+            OPORTUNIDADES
+        </span>
+
+        <h2>
+            Ofertas de trabajo
+        </h2>
+
+        <p>
+            Explorá las oportunidades disponibles.
+        </p>
+
+    </div>
+
+
+
+    <!-- BUSCADOR -->
+
+    <div class="buscador">
+
+        <div class="campo-busqueda">
+
+            🔎
+
+            <input
+                type="text"
+                id="busqueda"
+                placeholder="Buscar puesto, empresa o palabra clave..."
+            >
+
+        </div>
+
+
+        <select id="filtroCategoria">
+
+            <option value="todas">
+                Todas las categorías
+            </option>
+
+            <option value="Administración">
+                Administración
+            </option>
+
+            <option value="Comercio">
+                Comercio
+            </option>
+
+            <option value="Gastronomía">
+                Gastronomía
+            </option>
+
+            <option value="Construcción">
+                Construcción
+            </option>
+
+            <option value="Tecnología">
+                Tecnología
+            </option>
+
+            <option value="Educación">
+                Educación
+            </option>
+
+            <option value="Salud">
+                Salud
+            </option>
+
+            <option value="Otros">
+                Otros
+            </option>
+
+        </select>
+
+    </div>
+
+
+
+    <!-- ESTADO DE CARGA -->
+
+    <div
+        id="cargando"
+        class="cargando"
+    >
+
+        ⏳ Cargando ofertas...
+
+    </div>
+
+
+
+    <!-- OFERTAS -->
+
+    <div
+        id="contenedorOfertas"
+        class="ofertas"
+    >
+
+    </div>
+
+
+
+    <!-- SIN RESULTADOS -->
+
+    <div
+        id="sinResultados"
+        class="sin-resultados"
+    >
+
+        <div>
+            🔍
+        </div>
+
+        <h3>
+            No encontramos ofertas
+        </h3>
+
+        <p>
+            Probá con otra búsqueda o categoría.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     PUBLICAR
+========================================= -->
+
+<section
+    id="publicar"
+    class="publicar"
+>
+
+
+    <div class="publicar-contenido">
+
+        <span class="mini-titulo">
+            ¿TENÉS UNA OPORTUNIDAD?
+        </span>
+
+
+        <h2>
+
+            Publicá tu oferta
+
+            <span>
+                gratis.
+            </span>
+
+        </h2>
+
+
+        <p>
+
+            Completá el formulario y hacé que
+            tu propuesta llegue a personas que
+            están buscando una nueva oportunidad.
+
+        </p>
+
+
+        <div class="beneficios">
+
+            <div>
+                ✓ Publicación gratuita
+            </div>
+
+            <div>
+                ✓ Visible desde cualquier dispositivo
+            </div>
+
+            <div>
+                ✓ Contacto directo por WhatsApp
+            </div>
+
+            <div>
+                ✓ Sin necesidad de registrarse
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- FORMULARIO -->
+
+    <div class="formulario">
+
+        <h3>
+            Nueva oferta
+        </h3>
+
+
+        <form id="formOferta">
+
+
+            <div class="fila">
+
+                <div class="campo">
+
+                    <label>
+                        Puesto *
+                    </label>
+
+                    <input
+                        type="text"
+                        id="puesto"
+                        placeholder="Ej. Vendedor/a"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="campo">
+
+                    <label>
+                        Empresa / comercio *
+                    </label>
+
+                    <input
+                        type="text"
+                        id="empresa"
+                        placeholder="Nombre"
+                        required
+                    >
+
+                </div>
+
+            </div>
+
+
+
+            <div class="fila">
+
+                <div class="campo">
+
+                    <label>
+                        Categoría *
+                    </label>
+
+                    <select
+                        id="categoria"
+                        required
+                    >
+
+                        <option value="">
+                            Seleccionar
+                        </option>
+
+                        <option value="Administración">
+                            Administración
+                        </option>
+
+                        <option value="Comercio">
+                            Comercio
+                        </option>
+
+                        <option value="Gastronomía">
+                            Gastronomía
+                        </option>
+
+                        <option value="Construcción">
+                            Construcción
+                        </option>
+
+                        <option value="Tecnología">
+                            Tecnología
+                        </option>
+
+                        <option value="Educación">
+                            Educación
+                        </option>
+
+                        <option value="Salud">
+                            Salud
+                        </option>
+
+                        <option value="Otros">
+                            Otros
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="campo">
+
+                    <label>
+                        Localidad
+                    </label>
+
+                    <input
+                        type="text"
+                        id="localidad"
+                        placeholder="Ej. Viedma"
+                    >
+
+                </div>
+
+            </div>
+
+
+
+            <div class="campo">
+
+                <label>
+                    Descripción *
+                </label>
+
+                <textarea
+                    id="descripcion"
+                    rows="4"
+                    placeholder="Contanos sobre el puesto, requisitos, horarios..."
+                    required
+                ></textarea>
+
+            </div>
+
+
+
+            <div class="fila">
+
+                <div class="campo">
+
+                    <label>
+                        Tipo de trabajo
+                    </label>
+
+                    <select id="tipoTrabajo">
+
+                        <option value="Presencial">
+                            Presencial
+                        </option>
+
+                        <option value="Remoto">
+                            Remoto
+                        </option>
+
+                        <option value="Híbrido">
+                            Híbrido
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="campo">
+
+                    <label>
+                        WhatsApp de contacto *
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="whatsapp"
+                        placeholder="Ej. 2920123456"
+                        required
+                    >
+
+                </div>
+
+            </div>
+
+
+
+            <button
+                type="submit"
+                class="btn-enviar"
+                id="btnEnviar"
+            >
+
+                Publicar oferta 🚀
+
+            </button>
+
+
+            <div
+                id="mensajeError"
+                class="mensaje-error"
+            ></div>
+
+
+        </form>
+
+    </div>
+
+</section>
+
+</main>
+
+
+
+<!-- =========================================
+     FOOTER
+========================================= -->
+
+<footer>
+
+    <div class="footer-logo">
+        💼 Conectá Trabajo
+    </div>
+
+    <p>
+        Conectando personas con oportunidades.
+    </p>
+
+    <span>
+        © 2026 Conectá Trabajo
+    </span>
+
+</footer>
+
+
+
+<!-- =========================================
+     MODAL
+========================================= -->
+
+<div
+    id="modal"
+    class="modal"
+>
+
+    <div class="modal-contenido">
+
+        <button
+            id="cerrarModal"
+            class="cerrar"
+        >
+            ×
+        </button>
+
+
+        <div class="modal-icon">
+            🎉
+        </div>
+
+
+        <h3>
+            ¡Oferta publicada!
+        </h3>
+
+
+        <p>
+            La oferta ya está disponible online.
+        </p>
+
+
+        <button
+            class="btn-principal"
+            id="irOfertas"
+        >
+
+            Ver ofertas
+
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- =========================================
+     SUPABASE
+========================================= -->
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+
+<!-- NUESTRO JAVASCRIPT -->
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
