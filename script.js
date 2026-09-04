@@ -33,13 +33,17 @@ console.log(supabaseClient);
 /* =====================================================
    CREAR CLIENTE SUPABASE
 ===================================================== */
-
-/*const supabaseClient =
+/* 
+const supabaseClient =
     window.supabase.createClient(
         SUPABASE_URL,
         SUPABASE_KEY
-    ); 
+    );
 */
+
+/* =====================================================
+   ELEMENTOS HTML
+===================================================== */
 
 /* =====================================================
    ELEMENTOS HTML
