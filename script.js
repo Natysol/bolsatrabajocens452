@@ -11,8 +11,7 @@
 ===================================================== */
 
 const SUPABASE_URL =
-    "https://ydbkhrdfdgamaookeqnx.supabase.co
-";
+    "https://ydbkhrdfdgamaookeqnx.supabase.co";
 
 
 const SUPABASE_KEY =
