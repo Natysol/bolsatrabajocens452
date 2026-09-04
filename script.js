@@ -39,7 +39,7 @@ console.log(supabaseClient);
         SUPABASE_URL,
         SUPABASE_KEY
     ); 
-
+*/
 
 /* =====================================================
    ELEMENTOS HTML
